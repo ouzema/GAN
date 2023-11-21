@@ -9,42 +9,42 @@ Artists like Claude Monet are recognized for the unique styles of their works, s
 ## Table of Contents
 
 <ol>
-    <li><a href="https://#Objectives">Objectives</a></li>
+    <li><a>Objectives</a></li>
     <li>
-        <a href="https://#Setup">Setup</a>
+        <a>Setup</a>
         <ol>
-            <li><a href="#Installing-Required-Libraries">Installing Required Libraries</a></li>
-            <li><a href="#Importing-Required-Libraries">Importing Required Libraries</a></li>
-            <li><a href="#Defining Helper Functions">Defining Helper Functions</a></li>
+            <li><a>Installing Required Libraries</a></li>
+            <li><a>Importing Required Libraries</a></li>
+            <li><a>Defining Helper Functions</a></li>
         </ol>       
     </li>
-    <li><a href="#What is Image Style Transfer in Deep Learning?">What is Image Style Transfer in Deep Learning?</a></li>
-    <li><a href="#CycleGANs">CycleGANs</a>
+    <li><a>What is Image Style Transfer in Deep Learning?</a></li>
+    <li><a>CycleGANs</a>
         <ol>
-            <li><a href="#A quick recap on vanilla GANs">A quick recap on vanilla GANs</a></li>
-            <li><a href="#What's novel about CycleGANs?">What's novel about CycleGANs?</a></li>
+            <li><a>A quick recap on vanilla GANs</a></li>
+            <li><a>What's novel about CycleGANs?</a></li>
         </ol>  
     </li>   
-    <li><a href="#Data Loading">Data Loading</a></li>
-    <li><a href="#Building the Generator">Building the Generator</a>
+    <li><a>Data Loading</a></li>
+    <li><a>Building the Generator</a>
         <ol>
-            <li><a href="#Defining the Downsampling Block">Defining the Downsampling Block</a></li>
-            <li><a href="#Defining the Upsampling Block">Defining the Upsampling Block</a></li>
-            <li><a href="#Assembling the Generator">Assembling the Generator</a></li>
+            <li><a>Defining the Downsampling Block</a></li>
+            <li><a>Defining the Upsampling Block</a></li>
+            <li><a>Assembling the Generator</a></li>
         </ol>  
     </li>   
-    <li><a href="#Building the Discriminator">Building the Discriminator</a></li>
-    <li><a href="#Building the CycleGAN Model">Building the CycleGAN Model</a>
-    <li><a href="#Defining Loss Functions">Defining Loss Functions</a> 
-    <li><a href="#Model Training">Model Training</a>  
+    <li><a>Building the Discriminator</a></li>
+    <li><a>Building the CycleGAN Model</a>
+    <li><a>Defining Loss Functions</a> 
+    <li><a>Model Training</a>  
          <ol>
-            <li><a href="#Training the CycleGAN">Training the CycleGAN</a></li>
+            <li><a>Training the CycleGAN</a></li>
         </ol>  
     </li>     
-    <li><a href="#Visualize our Monet-esque photos">Visualize our Monet-esque photos</a>
+    <li><a>Visualize our Monet-esque photos</a>
         <ol>
-            <li><a href="#Loading the Pre-trained Weights">Loading the Pre-trained Weights</a></li>
-            <li><a href="#Visualizing Style Transfer Output">Visualizing Style Transfer Output</a></li>
+            <li><a>Loading the Pre-trained Weights</a></li>
+            <li><a>Visualizing Style Transfer Output</a></li>
         </ol>       
     </li>
 </ol>
@@ -161,3 +161,8 @@ Therefore, we will train the model for **one epoch** in this lab, which includes
 This is a screenshot of the CycleGAN's training history. Even though only the monet generator is needed for the style transfer task, but we can see that the losses of all 4 networks: monet generator, monet discriminator, photo generator, and photo discriminated, were being optimized. 
 
 <center><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-GPXX0KSEEN/images/training_history.png" style="vertical-align:middle;margin:20px 0px"></center>
+
+### Visualizing Style Transfer Output
+Finally! We will visualize the style transfer output produced by `monet_generator_model`. We take 5 sample images that are photos of beautiful landscapes in the original dataset and feed them to the model. 
+![output](/output.png?raw=true“output”)
+
