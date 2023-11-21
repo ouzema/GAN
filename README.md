@@ -164,5 +164,6 @@ This is a screenshot of the CycleGAN's training history. Even though only the mo
 
 ### Visualizing Style Transfer Output
 Finally! We will visualize the style transfer output produced by `monet_generator_model`. We take 5 sample images that are photos of beautiful landscapes in the original dataset and feed them to the model. 
-![output](/output.png?raw=true“output”)
+
+<center> ![output](/output.png?raw=true“output”) </center> 
 
